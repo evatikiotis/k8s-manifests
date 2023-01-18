@@ -27,9 +27,12 @@ spec:
       steps:
         - setWeight: 10
         - pause:
-            duration: 60 # 1 hour
+            duration: 60 # 1 minute
         - setWeight: 60
-        - pause: { } # pause indefinitely
+        - pause:
+            duration: 60 # 1 minute
+        - setWeight: 100
+#        - pause: { } # pause indefinitely
   #    postPromotionAnalysis:
   #      templates:
   #        - templateName: smoke-tests
