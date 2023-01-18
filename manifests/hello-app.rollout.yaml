@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: hello-app
-          image: vaggelas/mancala:1.0
+          image: vaggelas/file-server-application:42.0
           ports:
             - containerPort: 8080
 
