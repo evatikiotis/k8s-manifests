@@ -25,6 +25,7 @@ spec:
       activeService: hello-app
       previewService: hello-app-preview
       scaleDownDelaySeconds: 60 # 1 minute
+      autoPromotionEnabled: false
   #    postPromotionAnalysis:
   #      templates:
   #        - templateName: smoke-tests
