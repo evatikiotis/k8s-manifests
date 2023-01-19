@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: hello-app
-          image: vaggelas/file-server-application:42.0
+          image: vaggelas/mancala:1.0
           ports:
             - containerPort: 8080
 
@@ -25,14 +25,14 @@ spec:
       maxSurge: "25%"
       maxUnavailable: 0
       steps:
-        - setWeight: 10
+        - setWeight: 20
         - pause:
-            duration: 60 # 1 minute
+            duration: 600 # 10 minute
         - setWeight: 60
         - pause:
-            duration: 60 # 1 minute
-        - setWeight: 100
-#        - pause: { } # pause indefinitely
+            duration: 600 # 1 minute
+        - setWeight: 99
+        - pause: { } # pause indefinitely
   #    postPromotionAnalysis:
   #      templates:
   #        - templateName: smoke-tests
